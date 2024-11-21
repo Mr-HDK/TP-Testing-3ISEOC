@@ -20,70 +20,78 @@ Structure du projet
 
 * * * * *
 
-🚀 Mini-rappel sur Git : **"Un voyage à travers le contrôle de version"**
--------------------------------------------------------------------------
+Rappel sur Git
+--------------
 
-### **1\. Initier un voyage : Initialiser un dépôt Git**
+### Étapes pour gérer votre projet avec Git
 
-Si ce n'est pas déjà fait, initialise Git dans le répertoire de votre projet :
-
-bash
-
-Copy code
-
-`git init`
-
-Tu viens de transformer ton dossier en un dépôt Git ! Toutes les étapes de ton projet seront suivies ici.
-
-### **2\. Capturer l'instant : Ajouter et valider les changements**
-
-À chaque étape importante, "prends une photo" de tes fichiers avec Git :
-
-bash
-
-Copy code
-
-`git add .`
-
-Puis valide cette étape dans ton journal Git :
-
-bash
-
-Copy code
-
-`git commit -m "Ajout initial du projet Ceedling"`
-
-### **3\. Prépare-toi à partager : Configurer ton dépôt distant**
-
-Associe ton dépôt local à un dépôt distant sur GitHub :
-
-bash
-
-Copy code
-
-`git remote add origin <URL-de-ton-dépôt-GitHub>`
-
-### **4\. Publier ton travail : Pousser les changements**
-
-Partage tes fichiers avec ton équipe (ou toi-même) sur GitHub :
-
-bash
-
-Copy code
-
-`git push origin main`
-
-### **5\. Explorer l'historique : Voir les étapes de ton projet**
-
-Consulte ton voyage avec :
-
-bash
-
-Copy code
-
-`git log --oneline`
+Pour travailler efficacement sur ce TP, suivez les étapes ci-dessous.
 
 * * * * *
+
+### 1\. Cloner le dépôt du TP
+
+Commencez par cloner le dépôt GitHub contenant le TP :
+
+`git clone https://github.com/Mr-HDK/TP-Testing-3ISEOC.git`
+
+Une fois le dépôt cloné, accédez au dossier du projet :
+
+`cd TP-Testing-3ISEOC`
+
+* * * * *
+
+### 2\. Créer une branche avec votre prénom et nom
+
+Créez une branche pour travailler sur votre copie en utilisant votre prénom et nom (par exemple, `ahmed-jaleli`) :
+
+`git branch prenom-nom`
+
+`git checkout prenom-nom`
+
+> **Remarque :** Remplacez `prenom-nom` par vos vrais prénom et nom, en utilisant des lettres minuscules et un tiret pour séparer les mots (par exemple, ahmed-jaleli).
+
+* * * * *
+
+### 3\. Travailler sur votre branche
+
+1.  Modifiez les fichiers nécessaires au TP.
+2.  Ajoutez vos modifications au suivi de Git :
+   
+    `git add .`
+3.  Sauvegardez vos changements avec un message clair :
+   
+    `git commit -m "Début du TP - Ajout de [description]"`
+
+* * * * *
+
+### 4\. Mettre à jour votre branche (optionnel)
+
+Si le formateur apporte des modifications au dépôt principal pendant le TP, vous pouvez récupérer ces changements tout en conservant votre travail :
+
+1.  Basculez sur la branche principale (`main`) pour la mettre à jour :
+   
+    `git checkout main
+    git pull origin main`
+
+2.  Revenez sur votre branche et fusionnez les changements récents :
+   
+    `git checkout prenom-nom
+    git merge main`
+
+* * * * *
+
+### Commandes principales à retenir :
+
+| Commande | Description |
+| --- | --- |
+| `git clone [URL]` | Cloner un dépôt Git distant. |
+| `git branch prenom-nom` | Créer une nouvelle branche. |
+| `git checkout prenom-nom` | Passer sur une branche spécifique. |
+| `git add .` | Ajouter toutes les modifications au suivi de Git. |
+| `git commit -m "message"` | Sauvegarder les modifications avec un message. |
+| `git pull origin main` | Récupérer les changements du dépôt principal. |
+| `git merge main` | Fusionner une branche dans la branche actuelle. |
 
 🛠️ Préparation des outils
 --------------------------
@@ -105,34 +113,18 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
 
 -   **Installer Git** :
 
-    bash
-
-    Copy code
-
     `sudo apt update
     sudo apt install git`
 
 -   **Installer le compilateur C** :
 
-    bash
-
-    Copy code
-
     `sudo apt install build-essential`
 
 -   **Installer Ruby** :
 
-    bash
-
-    Copy code
-
     `sudo apt install ruby-full`
 
 -   **Installer Ceedling** :
-
-    bash
-
-    Copy code
 
     `gem install ceedling`
 
@@ -146,10 +138,6 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
     -   Assurez-vous d'inclure DevKit et d'ajouter Ruby au PATH.
 -   **Installer Ceedling** :
 
-    bash
-
-    Copy code
-
     `gem install ceedling`
 
 * * * * *
@@ -158,33 +146,17 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
 
 -   **Vérifiez Git** :
 
-    bash
-
-    Copy code
-
     `git --version`
 
 -   **Vérifiez le compilateur C** :
-
-    bash
-
-    Copy code
 
     `gcc --version`
 
 -   **Vérifiez Ruby** :
 
-    bash
-
-    Copy code
-
     `ruby --version`
 
 -   **Vérifiez Ceedling** :
-
-    bash
-
-    Copy code
 
     `ceedling version`
 
@@ -195,27 +167,15 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
 
 1.  **Créer un projet Ceedling** :
 
-    bash
-
-    Copy code
-
     `ceedling new TP-Unit-Tests`
 
 2.  **Ajouter les fichiers source et de test** dans les répertoires `src/` et `tests/`.
 
 3.  **Exécuter vos tests unitaires** :
 
-    bash
-
-    Copy code
-
     `ceedling test:all`
 
 4.  **Pousser vos changements sur GitHub** :
-
-    bash
-
-    Copy code
 
     `git add .
     git commit -m "Ajout des fichiers du TP-1"
