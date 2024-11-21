@@ -16,44 +16,13 @@ Les travaux pratiques ont pour objectif de :
 
 ---
 
-## Préparation des outils
-### Prérequis
-Les étudiants doivent disposer des outils suivants pour suivre ces travaux pratiques :
-- Un éditeur de code comme [VS Code](https://code.visualstudio.com/) ou tout autre éditeur de texte adapté.
-- Un compilateur C (par exemple, `gcc` ou MinGW sur Windows).
-- Git pour la gestion de version.
-- Ruby et Ceedling pour les tests unitaires.
+## TP1 : Introduction au Testing et Git
 
-### Installation des outils
-#### Pour Linux :
-1. **Installer Git :**
-   ```bash
-   sudo apt update
-   sudo apt install git
-2. **Installer le compilateur C :**
-   ```bash
-   sudo apt install build-essential
-3. **Installer Ruby :**
-   ```bash
-   sudo apt install ruby-full
-4. **Installer Ceedling :**
-   ```bash
-   gem install ceedling
-#### Pour Windows :
-1.  **Installer Git** depuis [Git pour Windows](https://git-scm.com/).
-2.  **Installer le compilateur C** avec MinGW.
-    -   Ajoutez le chemin du dossier `bin` à vos variables d'environnement.
-3.  **Installer Ruby** depuis [RubyInstaller](https://rubyinstaller.org/).
-    -   Assurez-vous d'inclure DevKit et d'ajouter Ruby au `PATH`.
-4.  **Installer Ceedling :**
-    `gem install ceedling`
-    
-### Vérification des installations
--   Vérifiez que Git est installé :
-    `git --version`
--   Vérifiez le compilateur C :
-    `gcc --version`
--   Vérifiez Ruby :
-    `ruby --version`
--   Vérifiez Ceedling :
-    `ceedling version`
+Le premier TP porte sur l'introduction aux tests unitaires et la gestion de version avec Git. Vous allez apprendre à configurer votre environnement de travail, effectuer des rappels sur les commandes Git essentielles et mettre en place les outils nécessaires à la réalisation de tests unitaires dans un environnement embarqué C.
+
+### Pour plus de détails sur le TP1, veuillez consulter [le README du TP1](TP1/README.md).
+
+---
+
+## Remarques importantes
+- Assurez-vous de consulter le `README.md` du TP1 pour obtenir des instructions détaillées sur l'installation et la configuration des outils nécessaires.
