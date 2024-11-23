@@ -67,11 +67,11 @@ Créez une branche pour travailler sur votre copie en utilisant votre prénom et
 
 ### 4\. Mettre à jour votre branche:
 
-**_Si_** des modifications sont apportées au dépôt principal, vous pouvez facilement récupérer ces changements tout en restant sur votre branche. Pour cela, utilisez cette commande :
+**_Si_** des modifications sont apportées par l'instructeur au dépôt principal (main), vous pouvez facilement récupérer ces changements tout en restant sur votre branche. Pour cela, utilisez cette commande :
 
 1.  **Depuis votre branche**, récupérez les derniers changements du dépôt principal :
    
-`git pull origin main`
+   `git pull origin main`
 
 Cela mettra à jour votre branche avec les dernières modifications de la branche main sans avoir besoin de passer par des étapes supplémentaires.
 
@@ -81,7 +81,7 @@ Une fois que vous avez terminé une partie de votre travail, il est important de
 
 1. Pousser vos changements sur votre branche GitHub :
 
-`git push origin prenom-nom`
+   `git push origin prenom-nom`
 
 Cela permet de sauvegarder vos modifications dans le dépôt distant tout en restant sur votre propre branche.
 
@@ -152,6 +152,8 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
 
     `gem install ceedling`
 
+ Consultez les détails concernant le problème d'installation de Ceedling et sa résolution dans la section ci-dessous : [Problèmes d'installation de Ceedling](#problème-avec-ruby-31-et-versions-ultérieures).
+
 * * * * *
 
 ### Vérification des installations
@@ -175,6 +177,7 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
     #### Problème avec Ruby 3.1 et versions ultérieures
 
 <details>
+   
   <summary>Problèmes d'installation de Ceedling (Version 0.31.1)</summary>
 
 
@@ -223,12 +226,19 @@ Pour plus de détails sur ce problème, vous pouvez consulter la discussion suiv
 3.  **Exécuter vos tests unitaires** :
 
     `ceedling test:all`
+    
+4. **Prendre des captures d'écran de votre terminal** :
 
-4.  **Pousser vos changements sur GitHub** :
+-   Après la création du projet (structure du dossier).
+-   Après l'exécution des tests (résultats des tests).
+
+5. **Créer un dossier** `/img` dans le répertoire du projet et y ajouter les captures d'écran.
+
+6.  **Pousser vos changements sur GitHub** :
 
     `git add .`
     
-    `git commit -m "Ajout des fichiers du TP-1"`
+    `git commit -m "Ajout des fichiers du TP-1 et [description..]"`
     
     `git push origin main`
 
