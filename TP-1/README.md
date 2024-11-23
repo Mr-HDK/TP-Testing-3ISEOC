@@ -65,19 +65,25 @@ Créez une branche pour travailler sur votre copie en utilisant votre prénom et
 
 * * * * *
 
-### 4\. Mettre à jour votre branche (optionnel)
+### 4\. Mettre à jour votre branche:
 
-Si le formateur apporte des modifications au dépôt principal pendant le TP, vous pouvez récupérer ces changements tout en conservant votre travail :
+**_Si_** des modifications sont apportées au dépôt principal, vous pouvez facilement récupérer ces changements tout en restant sur votre branche. Pour cela, utilisez cette commande :
 
-1.  Basculez sur la branche principale (`main`) pour la mettre à jour :
+1.  **Depuis votre branche**, récupérez les derniers changements du dépôt principal :
    
-    `git checkout main
-    git pull origin main`
+`git pull origin main`
 
-2.  Revenez sur votre branche et fusionnez les changements récents :
-   
-    `git checkout prenom-nom
-    git merge main`
+Cela mettra à jour votre branche avec les dernières modifications de la branche main sans avoir besoin de passer par des étapes supplémentaires.
+
+### 5\. Sauvegarder et envoyer vos modifications
+
+Une fois que vous avez terminé une partie de votre travail, il est important de pousser régulièrement vos changements sur GitHub pour ne pas perdre votre progression.
+
+1. Pousser vos changements sur votre branche GitHub :
+
+`git push origin prenom-nom`
+
+Cela permet de sauvegarder vos modifications dans le dépôt distant tout en restant sur votre propre branche.
 
 * * * * *
 
@@ -91,7 +97,9 @@ Si le formateur apporte des modifications au dépôt principal pendant le TP, vo
 | `git add .` | Ajouter toutes les modifications au suivi de Git. |
 | `git commit -m "message"` | Sauvegarder les modifications avec un message. |
 | `git pull origin main` | Récupérer les changements du dépôt principal. |
+| `git fetch origin` | Récupérer les changements du dépôt distant sans les fusionner. |
 | `git merge main` | Fusionner une branche dans la branche actuelle. |
+
 
 🛠️ Préparation des outils
 --------------------------
