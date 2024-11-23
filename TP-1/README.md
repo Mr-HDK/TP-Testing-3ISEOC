@@ -136,6 +136,9 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
 
     `gem install ceedling`
 
+    Consultez les détails concernant le problème d'installation de Ceedling et sa résolution dans la section ci-dessous : [Problèmes d'installation de Ceedling](#problèmes-dinstallation-de-ceedling-version-0311).
+
+
 #### Pour Windows :
 
 -   **Installer Git** depuis [Git pour Windows](https://git-scm.com/).
@@ -167,6 +170,41 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
 -   **Vérifiez Ceedling** :
 
     `ceedling version`
+<details>
+  <summary>Problèmes d'installation de Ceedling (Version 0.31.1)</summary>
+
+### Problème avec Ruby 3.1 et versions ultérieures
+
+Si vous utilisez Ceedling version 0.31.1, il est important de rester avec la version majeure et mineure de Ruby utilisée lors du développement de cette version de Ceedling. Pour la version 0.31.1, il est recommandé d'utiliser Ruby 3.0.x.
+
+Les versions de Ruby 3.1.0 et ultérieures peuvent causer des problèmes, notamment l'erreur suivante :
+undefined method `exists?' for class File (NoMethodError)
+
+### Solutions possibles
+
+1. **Utiliser une version compatible de Ruby** :
+   - Si possible, rétrogradez vers Ruby 3.0.x, qui est la version compatible avec Ceedling 0.31.1.
+   
+2. **Modifier le code source de Ceedling** :
+   Si la mise à jour de Ruby ne résout pas le problème, vous pouvez modifier manuellement le fichier source de Ceedling pour remplacer `File.exists?` par `File.exist?`.
+
+   **Étapes à suivre** :
+   1. Ouvrez le fichier `C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/ceedling-0.31.1/bin/ceedling` avec un éditeur de texte.
+   2. Remplacez toutes les occurrences de `File.exists?` par `File.exist?`.
+   3. Sauvegardez le fichier et réessayez la commande `ceedling version`.
+
+   Si cela ne résout toujours pas le problème, vous pouvez également essayer de modifier un autre fichier source :
+
+   1. Ouvrez le fichier `C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/ceedling-0.31.1/lib/ceedling/version.rb`.
+   2. Remplacez toutes les occurrences de `File.exists?` par `File.exist?` dans ce fichier.
+   3. Sauvegardez les modifications et réessayez d'exécuter la commande `ceedling version`.
+
+Cela devrait résoudre le problème lié à la méthode `File.exists?`.
+
+Pour plus de détails sur ce problème, vous pouvez consulter la discussion suivante sur [Google Groups](https://groups.google.com/g/throwtheswitch/c/0KwIzBcemH4/m/Jm8Yv_x-BAAJ).
+
+</details>
+
 
 * * * * *
 
