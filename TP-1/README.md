@@ -146,7 +146,7 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
 -   **Installer le compilateur C avec MinGW** :
     -   Téléchargez et installez MinGW.
     -   Ajoutez le chemin du dossier `bin` à vos variables d'environnement.
--   **Installer Ruby** depuis [RubyInstaller](https://rubyinstaller.org/).
+-   **Installer Ruby** depuis [RubyInstaller](https://rubyinstaller.org/). [**_Version 3.0.X recommandée_**](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.0.7-1/rubyinstaller-devkit-3.0.7-1-x64.exe)
     -   Assurez-vous d'inclure DevKit et d'ajouter Ruby au PATH.
 -   **Installer Ceedling** :
 
