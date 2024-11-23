@@ -170,10 +170,12 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
 -   **Vérifiez Ceedling** :
 
     `ceedling version`
+
+    #### Problème avec Ruby 3.1 et versions ultérieures
+
 <details>
   <summary>Problèmes d'installation de Ceedling (Version 0.31.1)</summary>
 
-### Problème avec Ruby 3.1 et versions ultérieures
 
 Si vous utilisez Ceedling version 0.31.1, il est important de rester avec la version majeure et mineure de Ruby utilisée lors du développement de cette version de Ceedling. Pour la version 0.31.1, il est recommandé d'utiliser Ruby 3.0.x.
 
