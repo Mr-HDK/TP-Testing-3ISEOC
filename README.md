@@ -18,7 +18,11 @@ Les travaux pratiques ont pour objectif de :
 
 ## TP-1 : Introduction au Testing et Git
 
-Le premier TP porte sur l'introduction aux tests unitaires et la gestion de version avec Git. Vous allez apprendre à configurer votre environnement de travail, effectuer des rappels sur les commandes Git essentielles et mettre en place les outils nécessaires à la réalisation de tests unitaires dans un environnement embarqué C.
+Ce premier TP couvre :
+- La configuration de votre environnement de travail.
+- Les bases et rappels sur les commandes Git essentielles.
+- L'initialisation et l'exécution de tests unitaires dans un environnement C embarqué.
+
 
 ### Pour plus de détails sur le TP-1, veuillez consulter [le README du TP-1](TP-1/README.md).
 
