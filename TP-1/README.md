@@ -136,7 +136,7 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
 
     `gem install ceedling`
 
-    Consultez les détails concernant le problème d'installation de Ceedling et sa résolution dans la section ci-dessous : [Problèmes d'installation de Ceedling](#problèmes-dinstallation-de-ceedling-version-0311).
+    Consultez les détails concernant le problème d'installation de Ceedling et sa résolution dans la section ci-dessous : [Problèmes d'installation de Ceedling](#problème-avec-ruby-31-et-versions-ultérieures).
 
 
 #### Pour Windows :
