@@ -254,3 +254,13 @@ Pour plus de détails sur ce problème, vous pouvez consulter la discussion suiv
 -   Des tests unitaires exécutés avec succès.
 
 * * * * *
+
+🎯 Étape suivante : [Concepts avancés](./exercice-avancé)
+
+Explorez le dossier **/exercice-avancé** pour :
+
+- Découvrir des exemples concrets de fonctions à tester.
+- Utiliser les extensions pour optimiser vos tests.
+- Travailler sur un nouveau défi technique.
+
+* * * * *
