@@ -121,8 +121,8 @@ Les étudiants doivent disposer des outils suivants pour suivre ces travaux prat
 
 -   **Installer Git** :
 
-    `sudo apt update
-    `sudo apt install git
+    `sudo apt update`
+    `sudo apt install git`
 
 -   **Installer le compilateur C** :
 
@@ -225,8 +225,8 @@ Pour plus de détails sur ce problème, vous pouvez consulter la discussion suiv
 
 4.  **Pousser vos changements sur GitHub** :
 
-    `git add .
-    `git commit -m "Ajout des fichiers du TP-1"
+    `git add .`
+    `git commit -m "Ajout des fichiers du TP-1"`
     `git push origin main`
 
 * * * * *
