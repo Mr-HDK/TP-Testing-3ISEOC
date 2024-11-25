@@ -1,27 +1,14 @@
 #include "temp_controller.h"
+#include "temp_sensor.h"
 
-// Simule une lecture de capteur (remplaçable par une vraie implémentation)
-int read_temperature_sensor(void) {
-    return 25; // Par défaut, une température simulée
-}
+int check_temperature(void) {
+    int temperature = read_temperature_sensor();
 
-// Configure les paramètres initiaux du système
-void init_temp_controller(TempController* controller, int threshold) {
-    controller->threshold = threshold;
-    controller->alert_triggered = 0;
-}
-
-// Vérifie la température et déclenche une alerte si nécessaire
-void monitor_temperature(TempController* controller) {
-    int current_temp = read_temperature_sensor();
-    if (current_temp > controller->threshold) {
-        controller->alert_triggered = 1; // Alerte déclenchée
+    if (temperature > 30) {
+        return 1; // Trop chaud
+    } else if (temperature < 15) {
+        return -1; // Trop froid
     } else {
-        controller->alert_triggered = 0; // Pas d'alerte
+        return 0; // Température normale
     }
-}
-
-// Renvoie l'état de l'alerte
-int is_alert_triggered(TempController* controller) {
-    return controller->alert_triggered;
 }
