@@ -1,14 +1,30 @@
-#include "temp_controller.h"
-#include "temp_sensor.h"
+#include "temp_controller.h"  // Inclure le fichier d'en-tête
 
-int check_temperature(void) {
+// Code source (restant inchangé)
+int read_temperature_sensor(void) {
+    return 25;
+}
+
+void activate_heating(void) {
+    printf("Chauffage activé!\n");
+}
+
+void activate_cooling(void) {
+    printf("Refroidissement activé!\n");
+}
+
+void do_nothing(void) {
+    printf("Température idéale, aucune action nécessaire.\n");
+}
+
+void control_temperature(void) {
     int temperature = read_temperature_sensor();
 
     if (temperature > 30) {
-        return 1; // Trop chaud
+        activate_cooling();
     } else if (temperature < 15) {
-        return -1; // Trop froid
+        activate_heating();
     } else {
-        return 0; // Température normale
+        do_nothing();
     }
 }
