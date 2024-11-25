@@ -1,53 +1,51 @@
 #include "unity.h"
-#include "temp_controller.h"
-#include "mock_temp_sensor.h" // Généré par CMock
-
-TempController controller;
+#include "temp_controller.h"  // Inclure le fichier d'en-tête de la fonction à tester
+#include "mock_temp_sensor.h"  // Inclure le mock de la fonction
 
 void setUp(void) {
-    init_temp_controller(&controller, 30); // Seuil de température 30°C
+    // Ceedling exécute ce code avant chaque test
 }
 
 void tearDown(void) {
-    // Réinitialisation si nécessaire
+    // Ceedling exécute ce code après chaque test
 }
 
-// Test de l'initialisation
-void test_init_temp_controller_should_set_initial_values(void) {
-    TEST_ASSERT_EQUAL(30, controller.threshold);
-    TEST_ASSERT_EQUAL(0, controller.alert_triggered);
+void test_control_temperature_high(void) {
+    // Simuler une température élevée (35°C)
+    read_temperature_sensor_ExpectAndReturn(35);
+
+    // Tester si la fonction de refroidissement est activée
+    activate_cooling_Expect();
+
+    control_temperature();
 }
 
-// Test : Aucune alerte si température sous le seuil
-void test_monitor_temperature_should_not_trigger_alert_below_threshold(void) {
-    read_temperature_sensor_ExpectAndReturn(25); // Simule 25°C
-    monitor_temperature(&controller);
-    TEST_ASSERT_FALSE(is_alert_triggered(&controller));
+void test_control_temperature_low(void) {
+    // Simuler une température basse (10°C)
+    read_temperature_sensor_ExpectAndReturn(10);
+
+    // Tester si la fonction de chauffage est activée
+    activate_heating_Expect();
+
+    control_temperature();
 }
 
-// Test : Déclenchement de l'alerte au-dessus du seuil
-void test_monitor_temperature_should_trigger_alert_above_threshold(void) {
-    read_temperature_sensor_ExpectAndReturn(35); // Simule 35°C
-    monitor_temperature(&controller);
-    TEST_ASSERT_TRUE(is_alert_triggered(&controller));
-}
+void test_control_temperature_normal(void) {
+    // Simuler une température normale (25°C)
+    read_temperature_sensor_ExpectAndReturn(25);
 
-// Test : Désactivation de l'alerte une fois la température normale
-void test_monitor_temperature_should_reset_alert_when_below_threshold(void) {
-    read_temperature_sensor_ExpectAndReturn(35); // Simule 35°C
-    monitor_temperature(&controller);
-    TEST_ASSERT_TRUE(is_alert_triggered(&controller));
-    
-    read_temperature_sensor_ExpectAndReturn(28); // Simule 28°C
-    monitor_temperature(&controller);
-    TEST_ASSERT_FALSE(is_alert_triggered(&controller));
+    // Tester si aucune action n'est effectuée
+    do_nothing_Expect();
+
+    control_temperature();
 }
 
 int main(void) {
     UNITY_BEGIN();
-    RUN_TEST(test_init_temp_controller_should_set_initial_values);
-    RUN_TEST(test_monitor_temperature_should_not_trigger_alert_below_threshold);
-    RUN_TEST(test_monitor_temperature_should_trigger_alert_above_threshold);
-    RUN_TEST(test_monitor_temperature_should_reset_alert_when_below_threshold);
+
+    RUN_TEST(test_control_temperature_high);
+    RUN_TEST(test_control_temperature_low);
+    RUN_TEST(test_control_temperature_normal);
+
     return UNITY_END();
 }
