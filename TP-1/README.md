@@ -219,9 +219,9 @@ Pour plus de détails sur ce problème, vous pouvez consulter la discussion suiv
 
 1.  **Créer un projet Ceedling** :
 
-    `ceedling new TP-Unit-Tests`
+    `ceedling new .`
 
-2.  **Ajouter les fichiers source et de test** dans les répertoires `src/` et `tests/`.
+2.  **Modifier le fichiers de test** dans le répertoire `/tests/`.
 
 3.  **Exécuter vos tests unitaires** :
 
@@ -240,7 +240,7 @@ Pour plus de détails sur ce problème, vous pouvez consulter la discussion suiv
     
     `git commit -m "Ajout des fichiers du TP-1 et [description..]"`
     
-    `git push origin main`
+    `git push origin prenom-nom`
 
 * * * * *
 
