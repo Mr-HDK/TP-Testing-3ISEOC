@@ -17,6 +17,7 @@ Structure du projet
 -   **`src/`** : Contient les fichiers sources de l'application à tester.
 -   **`tests/`** : Contient les fichiers de tests unitaires.
 -   **`TP-1/README.md`** : Ce fichier contient les instructions pour cette séance.
+-   **`exercice-avancé`** : Contient un exercice supplémentaire à réaliser.
 
 * * * * *
 
@@ -259,8 +260,8 @@ Pour plus de détails sur ce problème, vous pouvez consulter la discussion suiv
 
 Explorez le dossier **/exercice-avancé** pour :
 
-- Découvrir des exemples concrets de fonctions à tester.
-- Utiliser les extensions pour optimiser vos tests.
-- Travailler sur un nouveau défi technique.
+- Découvrir des exemples concrets de fonctions à tester avec des mocks.
+- Utiliser les extensions/plugins pour optimiser vos tests.
+- Travailler sur un nouveau défi technique lié aux systèmes embarqués.
 
 * * * * *
