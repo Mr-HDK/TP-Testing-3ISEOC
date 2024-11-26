@@ -149,7 +149,7 @@ Pour simplifier l'exécution et la gestion des tests, vous pouvez installer l'ex
 #### Interface de l'extension :
 Voici un aperçu de l'extension en action :
 
-![Ceedling Test Explorer](ceedling.png)
+![Ceedling Test Explorer](https://github.com/Mr-HDK/TP-Testing-3ISEOC/issues/4#issue-2695452997)
 
 ---
 
