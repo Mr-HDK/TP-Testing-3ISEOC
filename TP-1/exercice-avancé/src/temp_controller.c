@@ -1,4 +1,5 @@
 #include "temp_controller.h" 
+#include <stdio.h>
 
 /*
 int read_temperature_sensor(void) {
