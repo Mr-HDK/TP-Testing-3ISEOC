@@ -134,8 +134,31 @@ Voici une liste de commandes que vous pouvez utiliser dans ce projet :
 
 ---
 
+### 🛠️ Optionnel : Utiliser l'extension Ceedling Test Explorer dans VS Code
 
-## 🛠️ Références
+Pour simplifier l'exécution et la gestion des tests, vous pouvez installer l'extension **Ceedling Test Explorer** dans Visual Studio Code. Cette extension permet de :
+- Visualiser tous vos tests dans une interface conviviale.
+- Exécuter les tests directement depuis la barre latérale de VS Code.
+- Analyser les résultats des tests rapidement grâce à un résumé clair.
+
+#### Installation :
+1. Ouvrez l’onglet des extensions dans VS Code (Ctrl+Shift+X).
+2. Recherchez **Ceedling Test Explorer**.
+3. Cliquez sur **Install** pour l'ajouter à votre environnement.
+
+#### Interface de l'extension :
+Voici un aperçu de l'extension en action :
+
+![Ceedling Test Explorer](ceedling.png)
+
+---
+
+#### Remarque :
+L'utilisation de cette extension est **optionnelle**, mais elle peut considérablement améliorer votre expérience avec Ceedling dans VS Code.
+
+---
+
+## 📚 Références
 
 Pour plus de détails, consultez :
 - [GCovr Documentation](https://gcovr.com/en/stable/)
