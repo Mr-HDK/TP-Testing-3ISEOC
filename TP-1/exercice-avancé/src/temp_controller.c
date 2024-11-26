@@ -1,9 +1,10 @@
-#include "temp_controller.h"  // Inclure le fichier d'en-tête
+#include "temp_controller.h" 
 
-// Code source (restant inchangé)
+/*
 int read_temperature_sensor(void) {
     return 25;
 }
+*/
 
 void activate_heating(void) {
     printf("Chauffage activé!\n");
