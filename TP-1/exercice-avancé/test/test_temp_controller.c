@@ -40,12 +40,4 @@ void test_control_temperature_normal(void) {
     control_temperature();
 }
 
-int main(void) {
-    UNITY_BEGIN();
-
-    RUN_TEST(test_control_temperature_high);
-    RUN_TEST(test_control_temperature_low);
-    RUN_TEST(test_control_temperature_normal);
-
-    return UNITY_END();
-}
+//enelver la fnc main pour éviter le confit
