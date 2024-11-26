@@ -104,6 +104,7 @@ CMock est utilisé pour simuler des dépendances externes dans vos tests. Voici 
    
 <summary><strong>⚙️ Commandes utiles (Cliquez pour dérouler)</strong></summary>
 
+
 Voici une liste de commandes que vous pouvez utiliser dans ce projet :
 
 | **Outil**         | **Commande**                      | **Description**                                                                              |
@@ -134,7 +135,10 @@ Voici une liste de commandes que vous pouvez utiliser dans ce projet :
 
 ---
 
-### 🛠️ Optionnel : Utiliser l'extension Ceedling Test Explorer dans VS Code
+<details>
+   
+<summary><strong>🛠️ Optionnel : Utiliser l'extension Ceedling Test Explorer dans VS Code (Cliquez pour dérouler)</strong></summary>
+
 
 Pour simplifier l'exécution et la gestion des tests, vous pouvez installer l'extension **Ceedling Test Explorer** dans Visual Studio Code. Cette extension permet de :
 - Visualiser tous vos tests dans une interface conviviale.
@@ -149,12 +153,14 @@ Pour simplifier l'exécution et la gestion des tests, vous pouvez installer l'ex
 #### Interface de l'extension :
 Voici un aperçu de l'extension en action :
 
-![Ceedling Test Explorer](https://github.com/Mr-HDK/TP-Testing-3ISEOC/issues/4#issue-2695452997)
+![Screenshot 2024-11-26 040245](https://github.com/user-attachments/assets/1c3b5d91-bcc7-480d-98df-57390e1b702f)
 
 ---
 
 #### Remarque :
 L'utilisation de cette extension est **optionnelle**, mais elle peut considérablement améliorer votre expérience avec Ceedling dans VS Code.
+
+</details>
 
 ---
 
