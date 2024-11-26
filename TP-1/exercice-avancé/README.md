@@ -31,17 +31,20 @@ Bienvenue dans l'exercice avancé de testing avec Ceedling, Unity, GCovr et CMoc
 
 - Modifiez le fichier de test pour utiliser des mocks avec CMock.
 - Assurez-vous que toutes les dépendances externes sont simulées avec des fonctions comme :
-  mock_reset()
-  mock_verify()
-  func_ExpectAndReturn()
+
+  `mock_reset()`
+  `mock_verify()`
+  `func_ExpectAndReturn()`
   
 ### 4. Exécuter les tests et générer un rapport
 
 - Lancez tous les tests :
-  ceedling test:all
+  
+  `ceedling test:all`
 
 - Générez un rapport de couverture :
-  ceedling gcov:all
+  
+  `ceedling gcov:all`
 
 ### 5. Documenter les résultats
 
